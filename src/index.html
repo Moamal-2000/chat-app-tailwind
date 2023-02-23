@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>First Tailwind Project</title>
+  <!-- Tailwind -->
+  <link href="/dist/output.css" rel="stylesheet">
+  <!-- Main css file -->
+  <link rel="stylesheet" href="../style.css">
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font awesome icons-->
+  <script src="https://kit.fontawesome.com/5a1527845b.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="flex justify-center items-center relative">
+  <div class="background-shape rounded-full"></div>
+  <main class="container mx-auto flex gap-40 lg:gap-10 lg:mx-20 w-3/4 items-center xl:ml-96">
+    <div class="mobile-container bg-white p-4 rounded-3xl w-96">
+      <div class="header flex items-center justify-between pt-6 py-3 px-2 rounded-t-3xl">
+        <i class="fa-solid fa-angle-left p-3 transition hover:opacity-80 cursor-pointer select-none"></i>
+
+        <div class="user-container flex items-center gap-3 mr-20">
+          <div class="user-picture w-8">
+            <img class="max-w-full rounded-full border-solid border-white border-2" src="../images/avatar.jpg" alt="">
+          </div>
+          <div class="text flex flex-col justify-center">
+            <span class="font-medium">Samuel Green</span>
+            <span class="text-gray-200 text-xs">Available to Walk</span>
+          </div>
+        </div>
+        <i class="fa-solid fa-ellipsis-vertical p-3 transition hover:opacity-80 cursor-pointer select-none"></i>
+      </div>
+      <div class="body p-2 rounded-b-3xl overflow-hidden">
+        <p class="user-message">That sounds great. I’d be happy with that.</p>
+        <p class="user-message">Could you send over some pictures of your dog, please?</p>
+        <div class="friend-message images">
+          <div class="images flex gap-2">
+            <div class="img w-16">
+              <img class="max-w-full max-h-full rounded-md" src="../images/dog-image-1.jpg" alt="">
+            </div>
+
+            <div class="img w-16 rounded-r-md">
+              <img class="max-w-full max-h-full rounded-md" src="../images/dog-image-2.jpg" alt="">
+            </div>
+
+            <div class="img w-16 rounded-r-md">
+              <img class="max-w-full max-h-full rounded-md" src="../images/dog-image-3.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <p class="friend-message">Here are a few pictures. She’s a happy girl!</p>
+        <p class="friend-message">Can you make it?</p>
+        <p class="user-message">
+          She looks so happy! The time we discussed works. How long shall I take her out for?
+        </p>
+
+        <div class="challenge-container flex text-white justify-between items-center p-3 pr-8 mb-4">
+          <div class="checkbox-container">
+            <input class="cursor-pointer select-none" type="checkbox">
+            <span class="fake-checkbox">
+              <i class="fa-solid fa-check scale-75"></i>
+            </span>
+          </div>
+          <p class="mr-16">30 minute walk</p>
+          <span class="price">$29</span>
+        </div>
+
+        <div class="challenge-container flex text-white justify-between items-center p-3 pr-8 mb-4">
+          <div class="checkbox-container">
+            <input class="cursor-pointer select-none" type="checkbox">
+            <span class="fake-checkbox">
+              <i class="fa-solid fa-check scale-75"></i>
+            </span>
+          </div>
+          <p class="mr-24">1 hour walk</p>
+          <span class="price">$49</span>
+        </div>
+
+        <div class="message-input-container bg-white rounded-full p-1 pl-5 flex items-center">
+          <input class="text-xs w-full" type="text" placeholder="Type a message…">
+          <i
+            class="fa-solid fa-angle-right rounded-full text-xs w-6 h-6 p-3 mr-2 transition hover:opacity-80 cursor-pointer select-none"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-container max-w-md">
+      <h2 class="text-5xl font-medium mb-8">Simple booking</h2>
+      <p class="text-gray-400 text-lg"> Stay in touch with our dog walkers through the chat interface. This makes it
+        easy to
+        discuss arrangements and make bookings. Once the walk has been completed you can rate
+        your walker and book again all through the chat.
+      </p>
+    </div>
+  </main>
+
+  <footer class="w-full fixed bottom-0 left-0 p-4 border-solid border-t-2 border-gray-500 bg-white z-50">
+    <div class="container w-full flex gap-56 justify-center">
+      <p>
+        Challenge by <a class="text-purple-500 transition-opacity hover:opacity-50"
+          href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+      </p>
+      <p>Coded by <a class="text-purple-500 transition-opacity hover:opacity-50"
+          href="https://www.facebook.com/MoamalAlaa109" target="_blank">Moamal Alaa</a></p>
+    </div>
+  </footer>
+  <div class="overlay">
+    <div class="triple-spinner"></div>
+  </div>
+  <script src="../script.js"></script>
+</body>
+
+</html>
